@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> math () function in js </h1>
+    <script>
+        // math.ceil give upper , nearest value e.g 5.2 = 6 
+        var a = Math.ceil(5.2);
+        var a = Math.ceil(-4.2);
+        document.write( "Math.ceil= "+a+"<br><br>");
+        // Math.floor give lower value then given digits value e.g 5.2 = 5 , -5.4 = -6
+        var b = Math.floor(56.2);
+        document.write("Math.floor = "+b+"<br><br>");
+        // Math.round give the round of value 
+        var c = Math.round(70.2);
+        document.write("Math.round = "+c+ "<br><br>");
+         
+        var d = Math.max(56 , 58 , 60 ,70 ,80);
+        document.write("Math.max = "+b+"<br><br>");
+        var d = Math.min(56 , 58 , 60 ,70 ,80);
+        document.write("Math.min = " +d+ "<br><br>");
+        var e = Math.sqrt(9);
+        document.write("Math.sqrt  of  9 = " + e + "<br><br>");
+        var f = Math.cbrt(27);
+        document.write("Math.cbrt  of 27  = " + f + "<br><br>");
+        var g = Math.pow(3 , 4);
+        // here 3 is base and 4 is exponent 
+        document.write("Math.pow 3 power 4  = " + g + "<br><br>");
+        var h = Math.random();
+        // random give any value if not value pass in parameter b/w 0 and 1 
+        document.write("Math.random = " + h + "<br><br>");
+        // if random value should  be b/w 1- 10 then 
+        var h = Math.floor(Math.random()*10)+1;
+        document.write("Math.random  b/w 1-10 = " + h + "<br><br>");
+        // if random value should  be b/w 1- 100 then 
+         var h = Math.floor(Math.random()*100)+1;
+         document.write("Math.random b/w 1-100 = " + h + "<br><br>");
+         // abs absolute value  sign not consider e.g - 5 = 5 
+         var i = Math.abs(5.5);
+         document.write("Math.abs = " +i+ "<br><br>");
+         var i = Math.abs(-7.5);
+         document.write("Math.abs  for negative= " +i+ "<br><br>");
+         var i = Math.abs(null);
+         document.write("Math.abs  for null= " +i+ "<br><br>");
+         var i = Math.abs("hello");
+         document.write("Math.abs  for string= " +i+ "<br><br>")
+         // pi = 3.74
+         var j = Math.PI;
+         document.write("Math.pi = "+j)
+    </script>
+</body>
+</html>

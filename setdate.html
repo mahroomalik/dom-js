@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Date Methods</title>
+</head>
+<body>
+    <h1>Set Date Methods</h1>
+    <h4> set is the for running month , time </h4>
+    <script>
+        var now = new Date(); 
+        // method applying
+        now.setDate(30);
+        document.write( " <h2> previous Date is: </h2>"+ now+"<br>");
+    </script>
+    <hr>
+    <script>
+        var now = new Date(); 
+        // method applying
+        now.setFullYear(2025);
+        document.write( " <h2> setting year: </h2>"+ now.toDateString()+"<br>");
+    </script>
+    <hr>
+    <script>
+        var now = new Date(); 
+        // method applying
+        now.setMonth(3);
+        document.write( " <h2> setting month: </h2>"+ now.toDateString()+"<br>");
+    </script>
+    <hr>
+     <script>
+        var now = new Date(); 
+        // method applying
+        now.setHours(3);
+        document.write( " <h2> setting Hours: </h2>"+ now.toDateString()+"<br>");
+    </script>
+     <hr>
+     <h3>how to set Today date :</h3>
+     <script>
+        var now = new Date(); 
+        // method applying
+        now.setHours(3);
+        document.write(now.getDate()+"/"+now.getMonth()+"/"+now.getFullYear());
+    </script>
+</body>
+</html>

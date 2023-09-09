@@ -1,0 +1,50 @@
+ <!DOCTYPE html>
+<html id ="main">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nodes</title>
+    <style>
+      #outer{
+            width :600px;
+            height : 400px;
+            padding: 10px 10px;
+            margin:0 auto;
+            background:lightpink;
+            text-align: center;
+        }
+        #inner{
+            width :550px;
+            height : 200px;
+            padding: 10px 10px;
+            margin: 0 auto;
+            background:lightseagreen;
+            text-align: center;
+        }
+        #inner div {
+        display: inline-block;
+        background: #fff;
+        width: 95px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <h1> DOM Traversal ... parentElement & parentNode Method:</h1>
+    <div id="outer">
+        <h2>Outer</h2>
+        <div id="inner">
+            <h2>inner</h2>
+            <div>A</div>
+            <div>B</div>
+            <div id="child-C">C</div>
+            <div>D</div>
+            <div>E</div>
+        </div>
+    </div>
+    <script src = "childnod.js"></script>
+</body>
+</html>

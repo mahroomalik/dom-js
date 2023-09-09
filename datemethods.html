@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date methods</title>
+</head>
+<body>
+    <h1> Different methods of date</h1>
+    <hr>
+    <script>
+        var now = new Date(); 
+        document.write( " <h2> today date is: </h2>"+ now +"<br>");
+    </script>
+    <br>
+    <hr>
+    <h3> For simplicity:</h3>
+    <script>
+        var now = new Date(); 
+        document.write( " <h2> today date is: </h2>"+ now.toDateString()+"<br>");
+    </script>
+    <br>
+    <hr>
+    <h4>for just Date today</h4>
+    <script>
+        var now = new Date(); 
+        document.write( " <h2> today date is: </h2>"+ now.getDate()+"<br>");
+    </script>
+    <br>
+    <hr>
+    <h4>for Full year</h4>
+    <script>
+        var now = new Date(); 
+        document.write( " <h2> running year is: </h2>"+ now.getFullYear()+"<br>");
+    </script>
+    <br>
+    <hr>
+    <h4>for month</h4>
+    <script>
+        var now = new Date(); 
+        document.write( " <h2> running month is: </h2>"+ now.getMonth()+"<br>");
+    </script>
+    <br>
+    <hr>
+    <h4>for day</h4>
+    <script>
+        var now = new Date(); 
+        document.write( " <h2> running day is: </h2>"+ now.getDay()+"<br>");
+    </script>
+    <h4>for specific date: time , month , year and day</h4>
+    <script>
+        // put the specific value in parameter
+        var now = new Date('July 10 2021'); 
+        document.write( " <h2> : </h2>"+ now.getDay ()+"<br>");
+    </script>
+    <h4>for specific date: time , month , year and day</h4>
+    <script>
+        // minutes and seconds and milliseconds always be zero for past value:
+        // put the specific value in parameter
+        var now = new Date(); 
+        document.write( " <h2> running hour is: </h2>"+ now.getHours ()+"<br>");
+    </script>
+    <h4>for Minutes</h4>
+    <script>
+        // put the specific value in parameter
+        var now = new Date(); 
+        document.write( " <h2> running minutes is: </h2>"+ now.getMinutes ()+"<br>");
+    </script>
+
+    <h4>for Second</h4>
+    <script>
+        var now = new Date(); 
+        document.write( " <h2> running Seconds  is: </h2>"+ now.getSeconds ()+"<br>");
+    </script>
+    <h4>for Milliseconds</h4>
+    <script>
+        var now = new Date(); 
+        document.write( " <h2> running Milliseconds is: </h2>"+ now.getMilliseconds ()+"<br>");
+    </script>
+</body>
+</html>
